@@ -19,7 +19,7 @@ services:
       retries: 10
 
   4gaBoards:
-    image: ghcr.io/rargames/4gaboards:latest
+    image: ghcr.io/alcu1n/4gaboards:latest
     restart: always
     volumes:
       - user-avatars:/app/public/user-avatars
