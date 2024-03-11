@@ -7,7 +7,7 @@ export default {
 
   translation: {
     common: {
-      about: 'About 4ga Boards',
+      about: 'About Saga',
       account: 'Account',
       actions: 'Comments',
       addAttachment_title: 'Add attachment',
