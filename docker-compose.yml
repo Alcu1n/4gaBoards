@@ -10,7 +10,7 @@ services:
       - 3001:5432
     environment:
       POSTGRES_DB: 4gaBoards
-      POSTGRES_PASSWORD: notpassword
+      POSTGRES_PASSWORD: abb2d609bc3fa0c10f1126d849c4a023c1ec67f3a3984bf3db21027dd6cd58e215ef0bdda042ed0e413d492bc2897043af00128dbfa52adc74a9bef9df8c1c0d
       POSTGRES_INITDB_ARGS: "-A scram-sha-256"
     healthcheck:
       test: ["CMD-SHELL", "pg_isready -U postgres -d 4gaBoards"]
@@ -28,9 +28,9 @@ services:
     ports:
       - 3000:1337
     environment:
-      BASE_URL: http://localhost:3000
-      SECRET_KEY: notsecretkey
-      DATABASE_URL: postgresql://postgres:notpassword@db/4gaBoards
+      BASE_URL: http://alcu1n.com:3000
+      SECRET_KEY: abb2d609bc3fa0c10f1126d849c4a023c1ec67f3a3984bf3db21027dd6cd58e215ef0bdda042ed0e413d492bc2897043af00128dbfa52adc74a9bef9df8c1c0d
+      DATABASE_URL: postgresql://postgres:abb2d609bc3fa0c10f1126d849c4a023c1ec67f3a3984bf3db21027dd6cd58e215ef0bdda042ed0e413d492bc2897043af00128dbfa52adc74a9bef9df8c1c0d@db/4gaBoards
       NODE_ENV: production
     depends_on:
       db:
